@@ -1,0 +1,108 @@
+@import "typography.css";
+@import "colors.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow:scroll;
+}
+
+header, section.level2 {
+  display: grid;
+  padding: 1em;
+  height: 100%;
+}
+
+body > :nth-child(n+2) {
+  display: none;
+  height: 100vh;
+}
+
+body:first-child {
+  display: block;
+}
+
+#title-block-header h1 {
+  font-size: 3rem;
+}
+
+#title-block-header span {
+  display: block;
+}
+
+/* #title-block-header span:nth-of-type(2) { margin-left: 2em; }
+#title-block-header span:nth-of-type(3) { margin-left: 4em; } */
+
+#title-block-header {
+  /* --light-color: var(--blue-5);
+  --dark-color: var(--red-5); */
+  place-content: center;
+}
+
+
+#who-looks-at-the-interface {
+  /* --light-color: var(--blue-5);
+  --dark-color: var(--yellow-5); */
+  place-content: center;
+}
+
+
+
+#staged-fieldwork {
+  /* --light-color: var(--yellow-5);
+  --dark-color: var(--green-5); */
+  place-content: center;
+}
+
+
+.level2 main {
+  background-color: white;
+}
+
+
+#web-platform {
+  /* --light-color: var(--green-5);
+  --dark-color: var(--blue-5); */
+  place-content: center;
+}
+
+
+blockquote {
+  width: 60%;
+  padding: 1em;
+  border:1px solid var(--yellow-2);
+  background: radial-gradient(ellipse at bottom left, var(--orange-0), white);
+  display: grid; 
+  line-height: 1.4;
+  grid-template-columns: auto 1fr;
+  font-size: 4vh;
+}
+
+blockquote:before {
+  content: "“";
+  display: inline;
+  text-shadow: -2px 2px 0 var(--light-color);
+  width: 8vw;
+  font-size: 14vw;
+  opacity: .4;
+  color: var(--dark-color);
+}
+
+blockquote cite {
+  font-style: normal;
+  display: block;
+  font-size: 3.4vh;
+  margin: 0 2em  2em 0 ;
+  text-align: right;
+  width: 60%;
+  float: right;
+}
+
+blockquote cite:before {
+  content: '—';
+  margin-left: -2em;
+}
