@@ -11,15 +11,19 @@ body, html {
   overflow:scroll;
 }
 
-header, section.level2 {
+header, section.level2[data-current] {
   display: grid;
   padding: 1em;
   height: 100%;
 }
 
-body > :nth-child(n+2) {
+/* body > :nth-child(n+2) {
   display: none;
   height: 100vh;
+} */
+
+#title-block-header:not([data-current]), section.level2:not([data-current]){
+  display: none;
 }
 
 body:first-child {

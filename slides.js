@@ -1,11 +1,44 @@
-addEventListener('keyup', e => {
-  if(e.key == 'ArrowRight'){
-    document.body.lastElementChild.after(document.body.firstElementChild)
-  }
-	if(e.key == 'ArrowLeft'){
-    document.body.firstChild.before(document.body.lastElementChild)
+
+addEventListener('load', () => {
+  console.log(`loaded…`)
+  dispatchEvent(new Event('hashchange'))
+})
+
+addEventListener('hashchange', e => {
+  let n = parseInt(document.location.hash.slice(1))
+  console.log(n)
+})
+
+
+let slides = document.querySelectorAll("header#title-block-header, section.level2")
+
+let show = n => {
+  slides.forEach((section, index) => {
+    if (index === n) {
+      section.setAttribute("data-current", "true")
+    } else {
+      section.removeAttribute("data-current")
+    }
+  })
+}
+
+document.addEventListener("keydown", event => {
+  let currentIndex = Array.from(slides).findIndex(
+    section => section.getAttribute("data-current") === "true"
+  )
+  if (event.key === "ArrowLeft") {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1
+    show(currentIndex)
+  } else if (event.key === "ArrowRight") {
+    currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0
+    show(currentIndex)
   }
 })
+
+
+show(0)
+
+// randomizing slide colors below
 
 let hues = [ "red", "pink", "grape", "violet", "indigo", "blue", "cyan", "teal", "green", "lime", "yellow", "orange", "grey" ]
 
