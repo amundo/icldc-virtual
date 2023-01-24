@@ -1,0 +1,14 @@
+
+screen-recorder {
+  display: block;
+}
+
+
+screen-recorder video {
+  max-width: 100%;
+  border: 10px solid fuchsia;
+}
+
+body {
+  background: khaki;
+}
