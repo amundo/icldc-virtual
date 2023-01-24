@@ -47,4 +47,3 @@ title: <span>Designing and Building</span> <span>an Asynchronous Remote Fieldwor
 
 
 <script type=module src=slides.js> </script>
-<script type=module src=slides2.js> </script>
