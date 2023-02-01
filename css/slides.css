@@ -1,26 +1,20 @@
+@import "reset.css";
 @import "typography.css";
 @import "colors.css";
+@import "layouts.css";
 
-* {
-  box-sizing: border-box;
+
+
+#title-block-header, section.level2 {
+  height: 100vh;
+  display: none;
+  background-image: var(--nice-background-gradient)
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
-  overflow:scroll;
-}
-
-header, section.level2[data-current] {
+header[data-current], section.level2[data-current] {
   display: grid;
   padding: 1em;
-  height: 100%;
 }
-
-/* body > :nth-child(n+2) {
-  display: none;
-  height: 100vh;
-} */
 
 #title-block-header:not([data-current]), section.level2:not([data-current]){
   display: none;
@@ -30,12 +24,32 @@ body:first-child {
   display: block;
 }
 
+#title-block-header[data-current] {
+  height: 100vh;
+  display: grid;
+  place-content:center;
+}
+
 #title-block-header h1 {
   font-size: 3rem;
+  color:white;
+  padding: 1em;
+  text-shadow: -2px 2px 2px hsla(0,0%,0%, .3);
+  background: rgba(79, 76, 76, 0.8);
 }
 
 #title-block-header span {
   display: block;
+}
+
+
+section {
+  padding: 1em;
+}
+
+section.centered {
+  display: grid;
+  place-content: center;
 }
 
 /* #title-block-header span:nth-of-type(2) { margin-left: 2em; }
@@ -75,18 +89,15 @@ body:first-child {
 }
 
 
-blockquote {
-  width: 60%;
+blockquote.blowup {
   padding: 1em;
   border:1px solid var(--yellow-2);
   background: radial-gradient(ellipse at bottom left, var(--orange-0), white);
-  display: grid; 
   line-height: 1.4;
-  grid-template-columns: auto 1fr;
-  font-size: 4vh;
+  font-size: 3rem;
 }
 
-blockquote:before {
+blockquote.blowup::first-letter:before {
   content: "“";
   display: inline;
   text-shadow: -2px 2px 0 var(--light-color);
@@ -96,17 +107,40 @@ blockquote:before {
   color: var(--dark-color);
 }
 
-blockquote cite {
+blockquote.blowup cite {
   font-style: normal;
   display: block;
-  font-size: 3.4vh;
+  font-size: 2rem;
   margin: 0 2em  2em 0 ;
   text-align: right;
   width: 60%;
   float: right;
 }
 
-blockquote cite:before {
+blockquote.blowup cite:before {
   content: '—';
   margin-left: -2em;
+}
+
+.strike {
+  text-decoration: strikethru;
+}
+
+figure:has(img[src^="images/scenarios_"]) {
+  border: 2px solid black;
+}
+
+img {
+  background: white;
+  max-height: 80vh;
+}
+
+
+
+figure.photo {
+  background:white;
+  padding:1em;
+  padding-bottom: 1.5em;
+  transform:scale(.8)  rotate(4deg);
+  box-shadow: -2px 1px 1px black;
 }

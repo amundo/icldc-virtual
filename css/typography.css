@@ -11,7 +11,24 @@ font-family: 'Roboto Condensed', sans-serif;
 */
 
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 h1, h2, h3 {
   font-family: Kalam, sans-serif;
   font-weight: normal;
+}
+
+h2 strong {
+  font-family: Impact;
+  text-transform: uppercase;
+  color:red;
+  background:black;
+  padding: 2px;
+  letter-spacing: 1px;
+  font-size: 70%;
+  rotate: -4deg;
+  margin-top: -4em;
+  display: inline-block;
 }

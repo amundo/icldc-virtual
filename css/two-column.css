@@ -1,0 +1,12 @@
+.small-left-big-right {
+  display: grid;
+  grid-template: 
+     "left right" 1fr
+   / 1fr 4fr;
+  gap: 1em;
+  height: 100%;
+}
+
+.small-left-big-right h2 {
+  text-align: right;
+}
