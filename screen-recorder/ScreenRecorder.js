@@ -36,6 +36,7 @@ export class ScreenRecorder extends HTMLElement {
       this._recorderStream = gumStream ? this.mixer(gumStream, gdmStream) : gdmStream;
       this._recorder = new MediaRecorder(this._recorderStream, { mimeType: 'video/webm' });
 
+      this.querySelector('video').srcObject = stream
       this._recorder.ondataavailable = e => {
         if (e.data && e.data.size > 0) {
           this._recordingData.push(e.data);

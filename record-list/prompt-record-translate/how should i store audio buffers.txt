@@ -1,0 +1,8 @@
+- how should i store audio buffers?
+- should i use blobs so i can have urls on things?
+
+you already are:
+
+    <audio class="form-audio" src="blob:http://localhost/630252cb-9c0a-e64b-abdb-c8401a11fa4a"></audio>
+
+- should i get rid of teh audio tags? 

@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>  
-  <title>play-audio</title>
+  <title>record-word</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="play-audio-docs.css">
+  <link rel="stylesheet" href="record-word-docs.css">
 
 </head>
 <body>
   
 <header>
-  <h1>&lt;play-audio></h1>
+  <h1>&lt;record-word></h1>
   <p class=description></p>
 </header>
 
 <main>
   <section id=example>
     <h2>Example</h2>
-    <play-audio></play-audio>
+    <record-word></record-word>
   </section>
 
   <section id=attributes>
@@ -30,6 +30,10 @@
     <!-- list methods -->
   </section>
 
+  <section id=data>
+    <h2>Data</h2>
+    <!-- list data formats -->
+  </section>
 
   <section id=events>
     <h2>Events</h2>
@@ -49,9 +53,9 @@
 </main>
 
 <script type="module">
-import {PlayAudio} from './PlayAudio.js'
+import {RecordWord} from './RecordWord.js'
 
-window.playAudio = document.querySelector('play-audio')
+window.recordWord = document.querySelector('record-word')
 </script>
 
 </body>

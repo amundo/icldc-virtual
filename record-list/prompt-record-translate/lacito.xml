@@ -1,0 +1,21 @@
+<lacito>
+<HEADER>
+  <TITLE>Deux soeurs.</TITLE>
+  <SOUNDFILE href="SOEURS.mp2"/>
+</HEADER>
+<BODY lang="hayu">
+  <S id="s1">
+    <AUDIO start="2.3656" end="7.9256"/>
+    <TRANSCR>
+      <W> <FORM>nakpu</FORM> <GLS>deux</GLS> </W>
+      <W> <FORM>nonotso</FORM> <GLS>soeurs</GLS> </W>
+      <W> <FORM>sí</FORM> <GLS>bois</GLS> </W>
+      <W> <FORM>pa</FORM> <GLS>faire</GLS> </W>
+      <W> <FORM>lánatshem</FORM> <GLS>allèrent(D)</GLS> </W> <W> <FORM>are</FORM> <GLS>dit.on</GLS> </W>
+      <PONCT>.</PONCT>
+    </TRANSCR>
+    <TRADUC lang="Francais">On raconte que deux soeurs allèrent chercher du bois.</TRADUC>
+    <TRADUC lang="Anglais">They say that two sisters went to get firewood.</TRADUC>
+  </S>
+  </BODY>
+</lacito>

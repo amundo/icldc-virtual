@@ -6,9 +6,4 @@ screen-recorder {
 
 screen-recorder video {
   max-width: 100%;
-  border: 10px solid fuchsia;
-}
-
-body {
-  background: khaki;
 }
