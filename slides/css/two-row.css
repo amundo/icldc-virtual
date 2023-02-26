@@ -1,0 +1,19 @@
+.small-top-big-bottom {
+  display: grid;
+  grid-template: 
+     "banner" auto
+     "main"   1fr
+   / 1fr;
+  gap: 1em;
+  height: 100%;
+  justify-items: center;
+}
+
+.small-top-big-bottom h2 {
+  text-align: center;
+}
+
+.small-top-big-bottom > :nth-child(2){
+  background-color: white;;
+}
+

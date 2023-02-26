@@ -1,0 +1,64 @@
+.conversation {
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  background: #333;
+  width: 50%;
+  border: 1px solid;
+}
+
+.conversation [class^=speech-bubble] {
+  flex: 1;
+  background: radial-gradient(
+    ellipse at top left, 
+    rgb(237, 247, 247),
+     rgb(227, 242, 242)
+  );
+  width:60%;
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  max-width: 50ch;
+}
+
+
+.conversation [class^=speech-bubble]:before {
+  color: #333;
+  text-transform: uppercase;
+  font-size: x-small;
+  border-radius: 2px;
+  display: block;
+  padding: 2px;
+  content: attr(data-type);
+}
+
+.speech-bubble-right {
+  align-self: end;
+  clip-path: polygon(
+      0% 0%, 
+      calc(100% - .5em) 0%,
+      calc(100% - .5em) 40%,
+      100% 50%,
+      calc(100% - .5em) 60%,
+      calc(100% - .5em) 100%,
+      0% 100%);
+}
+
+.speech-bubble-left {
+  align-self: start;
+  clip-path: polygon(
+      .5em 0%, 
+      100% 0%,
+      100% 100%,
+      .5em 100%,
+      .5em 40%,
+      0% 50%,
+      .5em 60%,
+      .5em 0%);
+}
+
+
+.speech-bubble-right:before {
+  justify-self: end;
+}
+

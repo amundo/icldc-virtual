@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "build": "pandoc -f markdown -t html --template template.html --css speech-bubble.css --section-divs -o speech-bubble-docs.html speech-bubble-docs.md"
+  }
+}
