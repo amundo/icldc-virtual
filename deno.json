@@ -1,5 +1,5 @@
 {
   "tasks": {
-    "build": "pandoc -s --template=template.html -f markdown -t html --css css/slides.css --section-divs  -o slides.html slides.md"
+    "deploy": "rsync -rtpvzd /Users/patrickhall/Sites/Conferences/2023/icldc-virtual/ ruphusco@ruphus.com:pathall.net/talks/2023-icldc"
   }
 }
