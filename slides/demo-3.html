@@ -1,0 +1,41 @@
+<!doctype html>
+<title>Record audio</title>
+<button id="start-recording">Record for five seconds</button>
+<audio></audio>
+
+<script>
+let recordButton = document.querySelector('button#start-recording')
+let audio = document.querySelector('audio')
+
+let initialize = async () => {
+  let chunks = []
+
+  let stream = await navigator.mediaDevices.getUserMedia({audio: true})
+  let mediaRecorder = new MediaRecorder(stream, {mimeType: 'audio/webm'})
+
+  mediaRecorder.start()
+
+  setTimeout(() => mediaRecorder.stop() , 5000)
+  
+  mediaRecorder.addEventListener('dataavailable', dataavailableEvent => {
+    console.log(dataavailableEvent.data.size)
+    chunks.push(dataavailableEvent.data)
+  })
+
+  mediaRecorder.addEventListener('stop', stopEvent => {
+    let audioBlob = new Blob(chunks, { type: 'audio/webm' })
+    audio.src = URL.createObjectURL(audioBlob)
+
+    audio.addEventListener('durationchange', () => {
+      audio.controls = true
+      audio.play()
+    })
+  })
+
+
+window.chunks = chunks
+window.mediaRecorder = mediaRecorder
+}
+recordButton.addEventListener('click', clickEvent => initialize() ) 
+
+</script>

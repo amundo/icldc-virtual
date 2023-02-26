@@ -1,0 +1,13 @@
+<!doctype html>
+<title>An amazing button</title>
+<button>Click me!</button>
+<script>
+ // 1
+let button = document.querySelector('button')
+ 
+// 2
+let congratulate2 = event => alert("Hey, nice click event you sent me when you clicked on that " + event.target + "!")
+
+// 3
+button.addEventListener('click', congratulate2) 
+</script>
