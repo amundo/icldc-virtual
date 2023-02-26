@@ -132,7 +132,6 @@ figure:has(img[src^="images/scenarios_"]) {
 }
 
 img {
-  background: white;
   max-height: 80vh;
 }
 
