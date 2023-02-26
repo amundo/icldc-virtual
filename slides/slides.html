@@ -92,39 +92,111 @@
 <h1 class="title"><span>🎨 Designing and Building</span> <span>an
 Asynchronous Remote Fieldwork tool</span> <span>in the Web Platform</h1>
 </header>
-<section id="outline" class="level2 header-left-right">
-<h2>Outline</h2>
-<table>
+<section class="level2">
+<table id="outline-table" style="font-size: x-large; margin: 10% 20%">
 <tr>
-  <td>Designing</td>
-  <td><td>
+<td>
+Designing <em>and</em> Building
+</td>
+<td>
+<em>Imagining new interfaces for our workflows…</em>
+</td>
 </tr>
 <tr>
-  <td>Building</span></td>
-  <td><td>
+<td>
+<em>an</em> Asynchronous
+</td>
+<td>
+<em>…that can be used on in a “back and forth” fashion…</em>
+</td>
 </tr>
 <tr>
-  <td>Asynchronous</td>
-  <td><td>
+<td>
+Remote
+</td>
+<td>
+<em>…and carried out even though the speaker and linguist are
+apart…</em>
+</td>
 </tr>
 <tr>
-  <td>Remote</td>
-  <td><td>
+<td>
+Fieldwork tool
+</td>
+<td>
+<em>…to collect <strong>structured</strong> documentary data…</em>
+</td>
 </tr>
 <tr>
-  <td>Fieldwork tool</span></td>
-  <td><td>
-</tr>
-<tr>
-  <td>Web Platform</td>
-  <td><td>
+<td>
+in the Web Platform
+</td>
+<td>
+<em>…using the same open standards that make the web work.</em>
+</td>
 </tr>
 </table>
+</section>
+<section class="level2">
+<table id="outline-table" style="font-size: x-large; margin: 10% 20%">
+<tr>
+<td>
+Designing <em>and</em> Building
+</td>
+<td>
+<em>Imagining new interfaces for our workflows…</em>
+</td>
+</tr>
+<tr>
+<td>
+<em>an</em> Asynchronous
+</td>
+<td>
+<em>…that can be used on in a “back and forth” fashion…</em>
+</td>
+</tr>
+<tr>
+<td>
+Remote
+</td>
+<td>
+<em>…and carried out even though the speaker and linguist are
+apart…</em>
+</td>
+</tr>
+<tr>
+<td>
+Fieldwork tool
+</td>
+<td>
+<em>…to collect <strong>structured</strong> documentary data…</em>
+</td>
+</tr>
+<tr class="outline-current">
+<td>
+in the Web Platform
+</td>
+<td>
+<em>…using the same open standards that make the web work.</em>
+</td>
+</tr>
+</table>
+</section>
+<section class=level2>
+<h2>
+The basic problem of the internet: get information (usually but not
+always “files”) from one computer to another
+</h2>
+<figure>
+<img src=basic-problem.png>
+<figcaption>
+We need to get information from one computer to another. </ficaption>
+</figure>
 </section>
 <section id="before-the-web-ftp-file-transfer-protocol"
 class="level2 header-left-right">
 <h2>Before the web: FTP (File Transfer Protocol)</h2>
-<div class="terminal">
+<div id="ftp-log" class="terminal">
 <pre class="shell"><code>220 Welcome to FTP Server
 User (ftp.server.com:(none)): pat
 331 Password required for pat
@@ -155,7 +227,7 @@ name?
 Pat
 </p>
 <p class="speech-bubble-right server" data-type="🌐server">
-Password please?
+Do you know the magic word?
 </p>
 <p class="speech-bubble-left user" data-type="👨user">
 •••••••••
@@ -171,7 +243,7 @@ I have a directory called <code>documents/</code>, a directory called
 <code>images/</code>, and a file <code>story.txt</code>.
 </p>
 <p class="speech-bubble-left user" data-type="👨user">
-Get <code>story.txt</code>.
+Give me <code>story.txt</code>.
 </p>
 <p class="speech-bubble-right server" data-type="🌐server">
 Here you go… 📄 <em>File is transferred to Pat’s computer…</em>
@@ -188,7 +260,7 @@ Bye!
 <section id="on-the-web-http-hypertext-transfer-protocol"
 class="level2 header-left-right">
 <h2>On the web: HTTP (Hypertext Transfer Protocol)</h2>
-<div class="logs">
+<div id="logs">
 <div class="terminal">
 <pre class="shell"><code>GET /index.html HTTP/2
 Host: example.org
@@ -259,7 +331,7 @@ expires: Fri, 03 Mar 2023 20:50:56 GMT
 <article class="conversation">
 <p class="speech-bubble-left user" data-type="👨user">
 Hey web server at example.com, I’m speaking <code>HTTP</code>. I want
-the file <code>index.html</code>. Here’s some more info about me.
+the file <code>index.html</code>.
 </p>
 <p class="speech-bubble-right server" data-type="🌐server" data-type="🌐server">
 This is <code>example.org</code>. I have your file. Here’s some
@@ -278,18 +350,12 @@ class="level2 banner-two">
 <img class="zoom-image" src="images/exampleorg-network.png" >
 </figure>
 </section>
-<section id="synchronous-vs-asynchronous-remote-elicitation"
-class="level2 small-top-big-bottom">
-<h2>Synchronous vs Asynchronous remote elicitation</h2>
-<blockquote class="blowup">
-Broadly speaking, there are two types of remote elicitation methods:
-<mark>synchronous</mark> remote elicitation, and
-<mark>asynchronous</mark> remote elicitation.
-<cite><a href="https://elararchive.org/blog/2020/06/25/remote-linguistic-elicitation-methods/">Griscom,
-Richard T. 2020. Remote Linguistic Elicitation Methods. <em>Endangered
-Languages Archive Blog</em>.</a></cite>
-</blockquote>
-</section>
+<!-- 
+:::{.small-top-big-bottom}
+## Synchronous  vs  Asynchronous remote elicitation
+
+<blockquote class=blowup>Broadly speaking, there are two types of remote elicitation methods: <mark>synchronous</mark> remote elicitation, and <mark>asynchronous</mark> remote elicitation. <cite><a href="https://elararchive.org/blog/2020/06/25/remote-linguistic-elicitation-methods/">Griscom, Richard T. 2020. Remote Linguistic Elicitation Methods. <em>Endangered Languages Archive Blog</em>.</a></cite></blockquote>
+::: -->
 <section id="together-linguist-with-notebook-talking-to-speaker"
 class="level2 banner-two">
 <h2><strong>Together</strong> Linguist with notebook, talking to
