@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "title": "Abecedary for Portuguese",
+    "notes": "",
+    "letters": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "X",
+      "Z"
+    ],
+    "description": "An abecedary of the Portuguese alphabet. Not certain about the official status of some letters.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Portuguese_orthography#Letter_names_and_pronunciations",
+        "source": "Wikipedia"
+      }
+    ]
+  },
+  "letters": {
+    "metadata": {
+      "title": "Abecedary for Portuguese",
+      "notes": "",
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "X",
+        "Z"
+      ],
+      "description": "An abecedary of the Portuguese alphabet. Not certain about the official status of some letters.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Portuguese_orthography#Letter_names_and_pronunciations",
+          "source": "Wikipedia"
+        }
+      ]
+    },
+    "letters": [
+      {
+        "letter": "A",
+        "form": "aranha",
+        "gloss": "spider",
+        "emoji": "🕷"
+      },
+      {
+        "letter": "B",
+        "form": "bicicleta",
+        "gloss": "bicycle",
+        "emoji": "🚴"
+      },
+      {
+        "letter": "C",
+        "form": "cama",
+        "gloss": "bed",
+        "emoji": "🛏"
+      },
+      {
+        "letter": "D",
+        "form": "dinheiro",
+        "gloss": "money",
+        "emoji": "💰"
+      },
+      {
+        "letter": "E",
+        "form": "elefante",
+        "gloss": "elephant",
+        "emoji": "🐘"
+      },
+      {
+        "letter": "F",
+        "form": "flor",
+        "gloss": "flower",
+        "emoji": "🪷"
+      },
+      {
+        "letter": "G",
+        "form": "galinha",
+        "gloss": "chicken",
+        "emoji": "🐔"
+      },
+      {
+        "letter": "H",
+        "form": "hora",
+        "gloss": "hour",
+        "emoji": "🏥"
+      },
+      {
+        "letter": "I",
+        "form": "ímã",
+        "gloss": "magnet",
+        "emoji": "🧲"
+      },
+      {
+        "letter": "J",
+        "form": "jornal",
+        "gloss": "newspaper",
+        "emoji": "📰"
+      },
+      {
+        "letter": "L",
+        "form": "laranja",
+        "gloss": "orange",
+        "emoji": "🍊"
+      },
+      {
+        "letter": "M",
+        "form": "macaco",
+        "gloss": "monkey",
+        "emoji": "🙈"
+      },
+      {
+        "letter": "N",
+        "form": "nuvem",
+        "gloss": "cloud",
+        "emoji": "☁"
+      },
+      {
+        "letter": "O",
+        "form": "ovo",
+        "gloss": "egg",
+        "emoji": "🥚"
+      },
+      {
+        "letter": "P",
+        "form": "pera",
+        "gloss": "pear",
+        "emoji": "🍐"
+      },
+      {
+        "letter": "Q",
+        "form": "quente",
+        "gloss": "hot",
+        "emoji": "🥵"
+      },
+      {
+        "letter": "R",
+        "form": "rosa",
+        "gloss": "rose",
+        "emoji": "🌹"
+      },
+      {
+        "letter": "S",
+        "form": "sapo",
+        "gloss": "toad",
+        "emoji": "🐸"
+      },
+      {
+        "letter": "T",
+        "form": "três",
+        "gloss": "three",
+        "emoji": "🕒"
+      },
+      {
+        "letter": "U",
+        "form": "uva",
+        "gloss": "grape",
+        "emoji": "🍇"
+      },
+      {
+        "letter": "V",
+        "form": "vaca",
+        "gloss": "cow",
+        "emoji": "🐮"
+      },
+      {
+        "letter": "X",
+        "form": "xícara",
+        "gloss": "cup",
+        "emoji": "🍵"
+      },
+      
+      {
+        "letter": "Z",
+        "form": "zebra",
+        "gloss": "zebra",
+        "emoji": "🦓"
+      }
+    ]
+  }
+}
