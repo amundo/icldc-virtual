@@ -8,7 +8,7 @@
 }
 
 .conversation [class^=speech-bubble] {
-  flex: 1;
+  /* flex: 1; */
   background: radial-gradient(
     ellipse at top left, 
     rgb(237, 247, 247),

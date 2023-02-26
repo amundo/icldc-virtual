@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout reference</title>
+
+<style>
+@import url(reset.css);
+section {
+  height: 100vh;
+  border-bottom: 1px solid;
+  display: grid;
+  gap: 1em;
+  padding:1em;
+  position: relative;
+}
+
+section > * {
+  background: gray;
+  padding:1em;
+}
+
+</style>
+</head>
+<body>
+  
+<section style="grid-template-rows:auto 1fr;">
+  <h2>Heading</h2>
+  <div>
+    some stuff
+  </div>
+</section>
+
+
+<section style="grid-template-columns: 1fr 1fr; grid-template-rows:auto 1fr;">
+  <h2 style="grid-column: span 2;">Heading</h2>
+  <div>
+    some stuff
+  </div>  <div>
+    some stuff 
+    </div>
+</section>
+
+
+
+<section>
+  
+
+
+<table style="margin:10% 20%;">
+  <tr>
+    <td>a</td>
+    <td>b</td>
+  </tr>
+  <tr>
+    <td>a</td>
+    <td>b</td>
+  </tr>
+</table>
+    </div>
+</section>
+
+
+
+</body>
+</html>

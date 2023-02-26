@@ -166,7 +166,7 @@ blockquote.blowup mark {
   ;
   font-size: x-small;
   align-self: center;
-  max-height: 100%;
+  height: auto;
   overflow-y: scroll;
   border-radius: 5px;
 }
@@ -175,4 +175,40 @@ blockquote.blowup mark {
   height: 100%;
   overflow-y: scroll;
   width: 100%;
+}
+
+#logs {
+  display: grid;
+  gap:1em;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#logs .terminal {
+  height: 100%;
+  width: 80%;
+}
+
+#ftp-log:hover {
+  transform: scale(1.5) rotate(-2deg);
+}
+
+#outline-table {
+  background: white;
+  border-radius: 2px;
+  padding:1em;
+}
+
+#outline-table td {
+  padding:1em;
+  border-bottom: 1px solid gainsboro;
+}
+
+#outline-table tr td:nth-child(1) {
+  color:gray;
+}
+
+#outline-table .outline-current {
+  background: lemonchiffon;
 }
