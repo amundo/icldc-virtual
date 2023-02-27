@@ -1,5 +1,6 @@
 {
   "tasks": {
-    "build": "pandoc -s  --template=template.html -f markdown -t html --css css/slides.css --section-divs  -o slides.html slides.md"
+    "build": "pandoc -s  --template=template.html -f markdown -t html --css css/slides.css  -o slides.html slides.md"
+    "wtf": "pandoc -s  --template=template.html -f markdown -t html --css css/slides.css  -o wtf.html wtf.md"
   }
 }
