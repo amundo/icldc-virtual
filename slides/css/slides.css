@@ -225,7 +225,7 @@ blockquote.blowup mark {
   color:  inherit;
 }
 
-.outline-table tr td:nth-child(1) {
+.outline-table tr td:nth-child(2) {
   color:gray;
 }
 
@@ -247,3 +247,39 @@ blockquote.blowup mark {
   font-size:2rem;
   text-align: center;
 }
+
+#html-interactive-elements-table :is(th,td) {
+  margin: 0 .2em;
+}
+
+#html-interactive-elements-table tbody th {
+  background: lightgray;
+}
+
+#html-interactive-elements-table tbody th:first-child {
+  text-align: right;;
+}
+
+#html-interactive-elements-table td:last-child {
+  font-family: var(--programming-font-family);
+  font-size: 2rem;
+  background: hsl(0, 0%, 20%);
+  color: hsl(120, 60.8%, 50%);
+  padding:.2em;
+}
+
+/*
+
+.level2 {
+  display: grid !important;
+  border:1px;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+*/
