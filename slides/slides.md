@@ -3,14 +3,14 @@ title: 🎨 Designing and Building<br>Asynchronous Remote Fieldwork tools<br>in 
 ---
 
 <section id="outline" class="level2">
-<table id=outline-table style="font-size: x-large; margin: 10% 20%">
+<table class=outline-table style="font-size: x-large; margin: 10% 20%">
 <tr>
   <td>Designing <em>and</em> Building</td>
   <td><em>Imagining new interfaces for our workflows…</em></td>
 </tr>
 <tr>
   <td>Asynchronous</td>
-  <td><em>…that can be used on in a “back and forth” fashion…</em></td>
+  <td><em>…that can be used in a “back and forth” fashion…</em></td>
 </tr>
 <tr>
   <td>Remote</td>
@@ -31,14 +31,14 @@ title: 🎨 Designing and Building<br>Asynchronous Remote Fieldwork tools<br>in 
 
 <section id="outline-web" class="level2">
  
-<table id=outline-table style="font-size: x-large; margin: 10% 20%">
+<table class=outline-table style="font-size: x-large; margin: 10% 20%">
 <tr>
   <td>Designing <em>and</em> Building</td>
   <td><em>Imagining new interfaces for our workflows…</em></td>
 </tr>
 <tr>
   <td>Asynchronous</td>
-  <td><em>…that can be used on in a “back and forth” fashion…</em></td>
+  <td><em>…that can be used in a “back and forth” fashion…</em></td>
 </tr>
 <tr>
   <td>Remote</td>
@@ -157,9 +157,9 @@ It was hackers-only in those days.
 
 
 
-<section id=the-browser class="level2" style="grid-template: auto 1fr;">
+<section id=the-browser class="level2" style="">
 
-<h2 style="text-align:center;">Web browsers are just programs like any other, except that they “speak” <code>HTTP</code>, and they know how to display or <em>render</em> <code>HTML</code> files that come back when they receive a response.</h2>
+<h2 style="margin:10% 20%; color:white;text-shadow:-1px 1px 0 black;font-size:3rem;text-align:center;background:transparent;">Web browsers are just programs like any other, except that they “speak” <code>HTTP</code>, and they know how to display or <em>render</em> <code>HTML</code> files that come back when they receive a response.</h2>
 
 
 </section>
@@ -292,7 +292,7 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 <div style="background:white;margin:20% 10%;padding:1em;font-size:2rem;">
 <p>Creating a website is, in principle, pretty simple:</p>
 <ol>
-<li>Put some <code>HTML</code> files on a computer that has a <em>domain name</em> hooked up to it (that is, “upload” them)</li>
+<li>Put some <code>HTML</code> files on a computer that has a <em>domain name</em> hooked up to it (that is, you “upload” them)</li>
 <li>Share a  <code>URL</code> containing that domain name and a path to some your <code>HTML</code> files.</li>
 </ol>
 <p>Boom, your content is on the web.</p>
@@ -317,14 +317,14 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 
 <section id="outline-web" class="level2">
  
-<table id=outline-table style="font-size: x-large; margin: 10% 20%">
+<table class=outline-table style="font-size: x-large; margin: 10% 20%">
 <tr>
   <td>Designing <em>and</em> Building</td>
   <td><em>Imagining new interfaces for our workflows…</em></td>
 </tr>
 <tr>
   <td>Asynchronous</td>
-  <td><em>…that can be used on in a “back and forth” fashion…</em></td>
+  <td><em>…that can be used in a “back and forth” fashion…</em></td>
 </tr>
 <tr class=outline-current>
   <td>Remote</td>
@@ -344,7 +344,54 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 
 
 
+<section class=level2 id="parrish-and-oswalt" style="grid-template-rows:auto 1fr;">
+<h2>Typically,  or at least traditionally, linguists and speakers work together in person.</h2>
+<figure  style="margin: 10% 20%">
+<img src="images/parrish_oswalt.png">
+</figure>
+</section>
+
+
+<section class=level2 style="align-content:center; gap: 3em; grid-template-columns: 1fr 2fr;">
+<h2 style="display:grid;padding:2em;place-content:center">The internet opens the possibility of remote work</h2>
+<h3 style="color:white;text-shadow:-1px 1px 0 black;font-size:3rem;">
+Obviously, not every documentation project involves access to the internet. 
+<br>But many do, and it’s increasingly common.
+</h3>
+</section>
 
 
 
+
+<section id="outline-web" class="level2">
+ 
+<table class=outline-table style="font-size: x-large; margin: 10% 20%">
+<tr>
+  <td>Designing <em>and</em> Building</td>
+  <td><em>Imagining new interfaces for our workflows…</em></td>
+</tr>
+<tr class=outline-current>
+  <td>Asynchronous</td>
+  <td><em>…that can be used in a “back and forth” fashion…</em></td>
+</tr>
+<tr class=outline-done>
+  <td>Remote</td>
+  <td><em>…and carried out even though the speaker and linguist are apart…</em></td>
+</tr>
+<tr>
+  <td>Fieldwork tools</td>
+  <td><em>…to collect <strong>structured</strong> documentary data…</em></td>
+</tr>
+<tr class=outline-done>
+  <td>in the Web Platform</td>
+  <td><em>…using the open standards that make the web work.</em></td>
+</tr>
+</table>
+
+</section>
+
+
+
+<section id="outline-web" class="level2">
+</section>
 <script type=module src="slides.js"> </script>

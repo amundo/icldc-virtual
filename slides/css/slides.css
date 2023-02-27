@@ -198,43 +198,42 @@ blockquote.blowup mark {
   transform: scale(1.5) rotate(-2deg);
 }
 
-#outline-table {
+.outline-table {
   background: white;
   border-radius: 2px;
   padding:1em;
 }
 
-#outline-table td {
+.outline-table td {
   padding:1em;
   border-bottom: 1px solid gainsboro;
 }
 
 
-#outline-table td:before {
+.outline-table td:before {
   content: "👉";
   width:3ch;
   margin-left:-3ch;
   color:transparent;
 }
 
-#outline-table td:hover {
+.outline-table td:hover {
   cursor:pointer;
 }
 
-#outline-table td:hover:before {
+.outline-table td:hover:before {
   color:  inherit;
 }
 
-#outline-table tr td:nth-child(1) {
+.outline-table tr td:nth-child(1) {
   color:gray;
 }
 
-#outline-table .outline-current {
+.outline-table .outline-current {
   background: lemonchiffon;
 }
 
 #http-protocol figure {
-  
   justify-items: center;
   align-items: center;
   background: white;
