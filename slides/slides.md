@@ -60,7 +60,7 @@ title: 🎨 Designing and Building<br>Asynchronous Remote Fieldwork tools<br>in 
 
 <section id="basic-problem" class="level2" style="grid-template-rows: auto 1fr; justify-items:space-between;">
 
-<h2>The fundamental function of the web is transferring HTML files between computers</h2>
+<h2>The fundamental function of the internet is transferring HTML files between computers</h2>
 
 <figure style="display:grid;grid-template-columns:2fr 1fr 2fr;">
 <img src=images/server.png>
@@ -75,7 +75,7 @@ title: 🎨 Designing and Building<br>Asynchronous Remote Fieldwork tools<br>in 
 
 <section style="grid-template: auto 1fr / 1fr 1fr;" class="level2">
 
-<h2 style="text-align:center;grid-column: span 2;">Before the web, you could still transfer files via the internet, but it was not user-friendly at all.<br> For example, FTP (File Transfer Protocol) required a lot of typing.</h2>
+<h2 style="text-align:center;grid-column: span 2;">Before the web, such transfers were not user-friendly at all.<br> For example, FTP (File Transfer Protocol) required a lot of typing.</h2>
 
 <div class=terminal id=ftp-log>
 
@@ -361,7 +361,9 @@ Obviously, not every documentation project involves access to the internet.
 </section>
 
 
-
+<section class=level2 style="">
+<h2></h2>
+</section>
 
 <section id="outline-web" class="level2">
  
