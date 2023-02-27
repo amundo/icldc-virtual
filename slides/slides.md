@@ -21,7 +21,7 @@ title: 🎨 Designing and Building<br>Asynchronous Remote Fieldwork tools<br>in 
   <td><em>…to collect <strong>structured</strong> documentary data…</em></td>
 </tr>
 <tr>
-  <td>in the Web Platform</td>
+  <td><em>in the</em> Web Platform</td>
   <td><em>…using the open standards that make the web work.</em></td>
 </tr>
 </table>
@@ -49,7 +49,7 @@ title: 🎨 Designing and Building<br>Asynchronous Remote Fieldwork tools<br>in 
   <td><em>…to collect <strong>structured</strong> documentary data…</em></td>
 </tr>
 <tr class=outline-current>
-  <td>in the Web Platform</td>
+  <td><em>in the</em> Web Platform</td>
   <td><em>…using the open standards that make the web work.</em></td>
 </tr>
 </table>
@@ -73,7 +73,7 @@ title: 🎨 Designing and Building<br>Asynchronous Remote Fieldwork tools<br>in 
 
 
 
-<section style="grid-template: auto 1fr / 1fr 1fr;" class="level2">
+<section id=ftp style="grid-template: auto 1fr / 1fr 1fr;" class="level2">
 
 <h2 style="text-align:center;grid-column: span 2;">Before the web, such transfers were not user-friendly at all.<br> For example, FTP (File Transfer Protocol) required a lot of typing.</h2>
 
@@ -143,10 +143,10 @@ It was hackers-only in those days.
 </section>
 
 
+
 <section id=the-browser class="level2" style="grid-template: auto 1fr;">
 
-<h2 style="text-align:center;">The “Web Browser” is an easy-to-use program that made transferring files much simpler. <br>Type a <code>URL</code> or click a link, and you get a readable, clickable document.</h2>
-
+<h2 style="text-align:center;">What made the web much easier to use than previous internet tools was that it hid a lot of detail: <br>You don’t have to be a hacker, you just learn to look at a document (or “web page”) and click the bits of text with blue underlines!</h2>
 
 <figure style="max-height:100%;overflow-y:scroll;">
 <img class="zoom-image" src="images/exampleorg.png" >
@@ -155,18 +155,32 @@ It was hackers-only in those days.
 </section>
 
 
+<section id=the-browser class="level2" style="grid-template: auto 1fr;">
+
+<h2 style="text-align:center;">Behind the scenes, it’s just an <code>HTML</code> file.</h2>
+
+
+<figure style="max-height:100%;overflow-y:scroll;">
+<img class="zoom-image" src="images/exampleorg-html.png" >
+</figure>
+
+</section>
 
 
 <section id=the-browser class="level2" style="">
 
-<h2 style="margin:10% 20%; color:white;text-shadow:-1px 1px 0 black;font-size:3rem;text-align:center;background:transparent;">Web browsers are just programs like any other, except that they “speak” <code>HTTP</code>, and they know how to display or <em>render</em> <code>HTML</code> files that come back when they receive a response.</h2>
-
+<h2 style="margin:10% 20%; color:white;text-shadow:-1px 1px 0 black;font-size:3rem;text-align:center;background:transparent;">Web browsers are just programs like any other, except that they can “request” (copy) <code>HTML</code> files from other computers, and they know how to display or <em>render</em> the files that that the web servers send as “responses”.
+</h2>
 
 </section>
 
+
 <section id="on-the-web" class="level2 header-left-right" style=" grid-template:auto 1fr / 1fr 1fr;">
 
-<h2 style="grid-column:span 2">In fact, behind the scenes, there is a protocol that has a lot in common with the older file transfer protocol called <code>HTTP</code> (Hypertext Transfer Protocol).<br>It’s not that complicated, but it’s also not user-friendly.</h2>
+<h2 style="grid-column:span 2">A “Web Server” is a computer that can function as a file server: it understands those requests for files, and can formulate “responses” containing the requested <code>HTML</code> files.
+<br>Those rules constitute a “protocol” called <code>HTTP</code> (Hypertext Transfer Protocol).
+<br>It is actually quite a bit like <code>FTP</code>, but the user never has to see it!
+</h2>
 
 <div id=logs>
 
@@ -264,21 +278,14 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 
 
 
-
-
-
-
-
-
-
 <section id="http-protocol" class="level2" style="grid-template-rows: auto 1fr; justify-items:space-between;">
 
-<h2>So it’s not wrong to think about the web (primarily) as a system for using browsers to transfer files between computers.</h2>
+<h2>So it’s not wrong to think about the web (primarily) as a system for using browsers to transfer <code>HTML</code> files between computers.</h2>
 
 <figure style="display:grid;grid-template: auto auto /2fr 1fr 2fr;">
 <img src=images/server.png>
 <img src="images/file.png">
-<img src=images/laptop.png>
+<img src=images/laptop-browser.png>
 <figcaption><code>example.org</code></figcaption>
 <figcaption><code>index.html</code></figcaption>
 <figcaption><code>https://example.org/index.html</code></figcaption>
@@ -288,11 +295,14 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 
 
 
-<section class=level2 >
+<section id=make-a-site class=level2 >
+<h2>
+So what does it take to <em>make</em> a web site?
+</h2>
 <div style="background:white;margin:20% 10%;padding:1em;font-size:2rem;">
-<p>Creating a website is, in principle, pretty simple:</p>
+<p>In principle, it’s pretty simple:</p>
 <ol>
-<li>Put some <code>HTML</code> files on a computer that has a <em>domain name</em> hooked up to it (that is, you “upload” them)</li>
+<li>Copy some <code>HTML</code> files to a directory on a Web Server — a computer that has a <em>domain name</em> and is running <code>HTTP</code></li>
 <li>Share a  <code>URL</code> containing that domain name and a path to some your <code>HTML</code> files.</li>
 </ol>
 <p>Boom, your content is on the web.</p>
@@ -305,7 +315,7 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 
 <h2>What the heck does all this have to do with fieldwork?</h2>
 
-<h3 style=font-size:20em;>🤔</h3>
+<h3 style="font-size:20em;">🤔</h3>
 
 </section>
 
@@ -315,7 +325,7 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 
 
 
-<section id="outline-web" class="level2">
+<section id="outline-web-remote" class="level2">
  
 <table class=outline-table style="font-size: x-large; margin: 10% 20%">
 <tr>
@@ -335,7 +345,7 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
   <td><em>…to collect <strong>structured</strong> documentary data…</em></td>
 </tr>
 <tr class=outline-done>
-  <td>in the Web Platform</td>
+  <td><em>in the</em> Web Platform</td>
   <td><em>…using the open standards that make the web work.</em></td>
 </tr>
 </table>
@@ -344,28 +354,33 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 
 
 
-<section class=level2 id="parrish-and-oswalt" style="grid-template-rows:auto 1fr;">
-<h2>Typically,  or at least traditionally, linguists and speakers work together in person.</h2>
-<figure  style="margin: 10% 20%">
+<section class=level2 id="parrish-and-oswalt" style="grid-template: auto 1fr / auto 1fr;">
+<h2 style="grid-column:span 2">Typically,  or at least traditionally, linguists and speakers work together, in person, carrying out all kinds of documentation tasks: 
+.</h2>
+<figure  style="">
 <img src="images/parrish_oswalt.png">
 </figure>
+<div style="display:flex;flex-direction:column;align-items:space-around;background:white;font-size:2rem;margin:5em;padding:2em;">
+<p>
+</p>
+<ol>
+<li>collecting word lists
+<li>recording and transcribing narratives
+<li>eliciting grammatical evidence
+<li>etc., etc.…
+</ol>
+<p>
+<em>Some</em> of these tasks lend themselves to a remote, web-based scenario.
+</p>
+</div>
 </section>
 
 
-<section class=level2 style="align-content:center; gap: 3em; grid-template-columns: 1fr 2fr;">
-<h2 style="display:grid;padding:2em;place-content:center">The internet opens the possibility of remote work</h2>
-<h3 style="color:white;text-shadow:-1px 1px 0 black;font-size:3rem;">
-Obviously, not every documentation project involves access to the internet. 
-<br>But many do, and it’s increasingly common.
-</h3>
+<section id="html-documents-for-documentation" class="level2">
+<h2>Clearly, one useful thing would be to create some <code>HTML</code> with </h2>
 </section>
 
-
-<section class=level2 style="">
-<h2></h2>
-</section>
-
-<section id="outline-web" class="level2">
+<section id="outline-web-async" class="level2">
  
 <table class=outline-table style="font-size: x-large; margin: 10% 20%">
 <tr>
@@ -385,7 +400,7 @@ Obviously, not every documentation project involves access to the internet.
   <td><em>…to collect <strong>structured</strong> documentary data…</em></td>
 </tr>
 <tr class=outline-done>
-  <td>in the Web Platform</td>
+  <td><em>in the</em> Web Platform</td>
   <td><em>…using the open standards that make the web work.</em></td>
 </tr>
 </table>
@@ -394,6 +409,6 @@ Obviously, not every documentation project involves access to the internet.
 
 
 
-<section id="outline-web" class="level2">
+<section id="outline-web-" class="level2">
 </section>
 <script type=module src="slides.js"> </script>

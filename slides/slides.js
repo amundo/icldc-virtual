@@ -30,7 +30,7 @@ document.addEventListener("keydown", event => {
   if (event.key === "ArrowLeft") {
     currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1
     show(currentIndex)
-  } else if (event.key === "ArrowRight") {
+  } else if (event.key === "ArrowRight" || event.key == " ") {
     currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0
     show(currentIndex)
   }
