@@ -1,5 +1,5 @@
 ---
-title: 🎨 Designing and Building<br>an Asynchronous Remote Fieldwork tool<br>in the Web Platform 
+title: 🎨 Designing and Building<br>Asynchronous Remote Fieldwork tools<br>in the Web Platform 
 ---
 
 <section id="outline" class="level2">
@@ -9,7 +9,7 @@ title: 🎨 Designing and Building<br>an Asynchronous Remote Fieldwork tool<br>i
   <td><em>Imagining new interfaces for our workflows…</em></td>
 </tr>
 <tr>
-  <td><em>an</em> Asynchronous</td>
+  <td>Asynchronous</td>
   <td><em>…that can be used on in a “back and forth” fashion…</em></td>
 </tr>
 <tr>
@@ -17,12 +17,12 @@ title: 🎨 Designing and Building<br>an Asynchronous Remote Fieldwork tool<br>i
   <td><em>…and carried out even though the speaker and linguist are apart…</em></td>
 </tr>
 <tr>
-  <td>Fieldwork tool</td>
+  <td>Fieldwork tools</td>
   <td><em>…to collect <strong>structured</strong> documentary data…</em></td>
 </tr>
 <tr>
   <td>in the Web Platform</td>
-  <td><em>…using the same open standards that make the web work.</em></td>
+  <td><em>…using the open standards that make the web work.</em></td>
 </tr>
 </table>
 </section>
@@ -37,7 +37,7 @@ title: 🎨 Designing and Building<br>an Asynchronous Remote Fieldwork tool<br>i
   <td><em>Imagining new interfaces for our workflows…</em></td>
 </tr>
 <tr>
-  <td><em>an</em> Asynchronous</td>
+  <td>Asynchronous</td>
   <td><em>…that can be used on in a “back and forth” fashion…</em></td>
 </tr>
 <tr>
@@ -45,12 +45,12 @@ title: 🎨 Designing and Building<br>an Asynchronous Remote Fieldwork tool<br>i
   <td><em>…and carried out even though the speaker and linguist are apart…</em></td>
 </tr>
 <tr>
-  <td>Fieldwork tool</td>
+  <td>Fieldwork tools</td>
   <td><em>…to collect <strong>structured</strong> documentary data…</em></td>
 </tr>
 <tr class=outline-current>
   <td>in the Web Platform</td>
-  <td><em>…using the same open standards that make the web work.</em></td>
+  <td><em>…using the open standards that make the web work.</em></td>
 </tr>
 </table>
 
@@ -58,22 +58,24 @@ title: 🎨 Designing and Building<br>an Asynchronous Remote Fieldwork tool<br>i
 
 
 
-<section id="basic-problem" class="level2" style="justify-items:center;">
+<section id="basic-problem" class="level2" style="grid-template-rows: auto 1fr; justify-items:space-between;">
 
-## The basic problem of the internet: get information (usually but not always “files”) from one computer to another
+<h2>The fundamental function of the web is transferring HTML files between computers</h2>
 
-<figure>
-<img src=basic-problem.png>
-<figcaption>
-Get information from one computer to another. 
-</ficaption>
+<figure style="display:grid;grid-template-columns:2fr 1fr 2fr;">
+<img src=images/server.png>
+<img src="images/plain-file.png">
+<img src=images/laptop.png>
 </figure>
+
 </section>
+
+
 
 
 <section style="grid-template: auto 1fr / 1fr 1fr;" class="level2">
 
-<h2 style="grid-column: span 2;">Before the web: FTP (File Transfer Protocol)</h2>
+<h2 style="text-align:center;grid-column: span 2;">Before the web, you could still transfer files via the internet, but it was not user-friendly at all.<br> For example, FTP (File Transfer Protocol) required a lot of typing.</h2>
 
 <div class=terminal id=ftp-log>
 
@@ -130,15 +132,41 @@ Here you go… 📄 <em>File is transferred to Pat’s computer…</em> Bye!
 
 </section>
 
+<section id=hackers-only class=level2>
+<figure style=text-align:center;>
+<img src=images/hackers-poster.webp>
+<figcaption style="box-shadow:-1px 1px 1px black;padding:1em;display:inline;background:white;font-size:2rem;">
+It was hackers-only in those days.
+</figcaption>
+</figure>
+
+</section>
+
+
+<section id=the-browser class="level2" style="grid-template: auto 1fr;">
+
+<h2 style="text-align:center;">The “Web Browser” is an easy-to-use program that made transferring files much simpler. <br>Type a <code>URL</code> or click a link, and you get a readable, clickable document.</h2>
+
+
+<figure style="max-height:100%;overflow-y:scroll;">
+<img class="zoom-image" src="images/exampleorg.png" >
+</figure>
+
+</section>
 
 
 
 
+<section id=the-browser class="level2" style="grid-template: auto 1fr;">
 
+<h2 style="text-align:center;">Web browsers are just programs like any other, except that they “speak” <code>HTTP</code>, and they know how to display or <em>render</em> <code>HTML</code> files that come back when they receive a response.</h2>
+
+
+</section>
 
 <section id="on-the-web" class="level2 header-left-right" style=" grid-template:auto 1fr / 1fr 1fr;">
 
-<h2 style="grid-column:span 2">On the web: HTTP (Hypertext Transfer Protocol)</h2>
+<h2 style="grid-column:span 2">In fact, behind the scenes, there is a protocol that has a lot in common with the older file transfer protocol called <code>HTTP</code> (Hypertext Transfer Protocol).<br>It’s not that complicated, but it’s also not user-friendly.</h2>
 
 <div id=logs>
 
@@ -238,18 +266,46 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 
 
 
-<section id=the-browser class="level2" style="grid-template: auto 1fr / 1fr 1fr;">
-
-<h2 style="grid-column:span 2">The Browser: A user interface for HTTP</h2>
 
 
-<figure style="max-height:100%;overflow-y:scroll;">
-<img class="zoom-image" src="images/exampleorg.png" >
+
+
+
+<section id="http-protocol" class="level2" style="grid-template-rows: auto 1fr; justify-items:space-between;">
+
+<h2>So it’s not wrong to think about the web (primarily) as a system for using browsers to transfer files between computers.</h2>
+
+<figure style="display:grid;grid-template: auto auto /2fr 1fr 2fr;">
+<img src=images/server.png>
+<img src="images/file.png">
+<img src=images/laptop.png>
+<figcaption><code>example.org</code></figcaption>
+<figcaption><code>index.html</code></figcaption>
+<figcaption><code>https://example.org/index.html</code></figcaption>
 </figure>
 
-<figure style="max-height:100%;overflow-y:scroll;">
-<img class="zoom-image" src="images/exampleorg-network.png" >
-</figure>
+</section>
+
+
+
+<section class=level2 >
+<div style="background:white;margin:20% 10%;padding:1em;font-size:2rem;">
+<p>Creating a website is, in principle, pretty simple:</p>
+<ol>
+<li>Put some <code>HTML</code> files on a computer that has a <em>domain name</em> hooked up to it (that is, “upload” them)</li>
+<li>Share a  <code>URL</code> containing that domain name and a path to some your <code>HTML</code> files.</li>
+</ol>
+<p>Boom, your content is on the web.</p>
+</div>
+</section>
+
+
+
+<section id=what-the-heck class="level2" style="justify-items:center; grid-template-rows: auto 1fr ">
+
+<h2>What the heck does all this have to do with fieldwork?</h2>
+
+<h3 style=font-size:20em;>🤔</h3>
 
 </section>
 
@@ -257,20 +313,34 @@ This is <code>example.org</code>. I have your file. Here’s some information ab
 
 
 
-<section id=what-the-heck class="level2" style="grid-template: auto 1fr / 1fr 1fr;">
-
-<h2 style="grid-column:span 2">What the heck does all this have to do with fieldwork?</h2>
 
 
+<section id="outline-web" class="level2">
+ 
+<table id=outline-table style="font-size: x-large; margin: 10% 20%">
+<tr>
+  <td>Designing <em>and</em> Building</td>
+  <td><em>Imagining new interfaces for our workflows…</em></td>
+</tr>
+<tr>
+  <td>Asynchronous</td>
+  <td><em>…that can be used on in a “back and forth” fashion…</em></td>
+</tr>
+<tr class=outline-current>
+  <td>Remote</td>
+  <td><em>…and carried out even though the speaker and linguist are apart…</em></td>
+</tr>
+<tr>
+  <td>Fieldwork tools</td>
+  <td><em>…to collect <strong>structured</strong> documentary data…</em></td>
+</tr>
+<tr class=outline-done>
+  <td>in the Web Platform</td>
+  <td><em>…using the open standards that make the web work.</em></td>
+</tr>
+</table>
 
 </section>
-
-
-
-
-
-
-
 
 
 

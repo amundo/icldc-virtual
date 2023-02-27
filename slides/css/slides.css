@@ -12,6 +12,11 @@
   background-image: var(--nice-background-gradient)
 }
 
+section.level2 > h2 {
+  padding:.4em;
+  background: white;
+}
+
 header[data-current], section.level2[data-current] {
   display: grid;
   padding: 1em;
@@ -204,10 +209,42 @@ blockquote.blowup mark {
   border-bottom: 1px solid gainsboro;
 }
 
+
+#outline-table td:before {
+  content: "👉";
+  width:3ch;
+  margin-left:-3ch;
+  color:transparent;
+}
+
+#outline-table td:hover {
+  cursor:pointer;
+}
+
+#outline-table td:hover:before {
+  color:  inherit;
+}
+
 #outline-table tr td:nth-child(1) {
   color:gray;
 }
 
 #outline-table .outline-current {
   background: lemonchiffon;
+}
+
+#http-protocol figure {
+  
+  justify-items: center;
+  align-items: center;
+  background: white;
+  padding:2em;
+}
+
+#http-protocol figure img {
+  height: auto;
+}
+#http-protocol figure figcaption {
+  font-size:2rem;
+  text-align: center;
 }
