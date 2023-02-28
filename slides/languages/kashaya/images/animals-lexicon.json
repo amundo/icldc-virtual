@@ -1,0 +1,206 @@
+{
+  "metadata": {
+      "title": "Words for animals in Kashaya Pomo",
+      "sources": [
+        "Robert Oswalt dictionary",
+        "Images from Wikipedia"
+      ]
+  },
+  "words":[
+  {
+    "form": "buṭaqa",
+    "gloss": "bat",
+    "links": [
+      {
+        "type": "image",
+        "url": "bat.jpg"
+      }
+    ]
+  },
+  {
+    "form": "",
+    "gloss": "black cat",
+    "links": [
+      {
+        "type": "image",
+        "url": "blackcat.jpg"
+      }
+    ]
+  },
+  {
+    "form": "sʼawala",
+    "gloss": "Steller’s jay",
+    "links": [
+      {
+        "type": "image",
+        "url": "bluejay.jpg"
+      }
+    ]
+  },
+  {
+    "form": "dolomʔ",
+    "gloss": "bobcat",
+    "links": [
+      {
+        "type": "image",
+        "url": "bobcat.jpg"
+      }
+    ]
+  },
+  {
+    "form": "",
+    "gloss": "cat",
+    "links": [
+      {
+        "type": "image",
+        "url": "cat.jpg"
+      }
+    ]
+  },
+  {
+    "letter": "t",
+    "form": "ṭʰoʔo·koyʔ",
+    "gloss": "cricket"
+  },
+  {
+    "form": "",
+    "gloss": "elk",
+    "links": [
+      {
+        "type": "image",
+        "url": "elk.jpg"
+      }
+    ]
+  },
+  {
+    "letter": "q̓",
+    "form": "q̓asi·si",
+    "gloss": "elk"
+  },
+  {
+    "form": "",
+    "gloss": "fly",
+    "links": [
+      {
+        "type": "image",
+        "url": "fly.jpg"
+      }
+    ]
+  },
+  {
+    "form": "",
+    "gloss": "grasshopper",
+    "links": [
+      {
+        "type": "image",
+        "url": "grasshopper.jpg"
+      }
+    ]
+  },
+  {
+    "letter": "m",
+    "form": "muhṭuṭu",
+    "gloss": "great horned owl"
+  },
+  {
+    "form": "",
+    "gloss": "greathornedowl",
+    "links": [
+      {
+        "type": "image",
+        "url": "greathornedowl.jpg"
+      }
+    ]
+  },
+  {
+    "form": "",
+    "gloss": "groundsquirrel",
+    "links": [
+      {
+        "type": "image",
+        "url": "groundsquirrel.jpg"
+      }
+    ]
+  },
+  {
+    "letter": "y",
+    "form": "yahmo",
+    "gloss": "mountain lion"
+  },
+  {
+    "form": "",
+    "gloss": "mountainlion",
+    "links": [
+      {
+        "type": "image",
+        "url": "mountainlion.jpg"
+      }
+    ]
+  },
+  {
+    "form": "",
+    "gloss": "octopus",
+    "links": [
+      {
+        "type": "image",
+        "url": "octopus.jpg"
+      }
+    ]
+  },
+  {
+    "letter": "p",
+    "form": "pihšil",
+    "gloss": "octopus"
+  },
+  {
+    "form": "",
+    "gloss": "racoon",
+    "links": [
+      {
+        "type": "image",
+        "url": "racoon.jpg"
+      }
+    ]
+  },
+  {
+    "form": "",
+    "gloss": "ringtail",
+    "links": [
+      {
+        "type": "image",
+        "url": "ringtail.jpg"
+      }
+    ]
+  },
+  {
+    "form": "sʼayi",
+    "gloss": "scrub jay",
+    "links": [
+      {
+        "type": "image",
+        "url": "scrubjay.jpg"
+      }
+    ]
+  },
+  {
+    "letter": "c",
+    "form": "cohṭʰoɂ",
+    "gloss": "wolf spider",
+    "links": [
+      {
+        "type": "image",
+        "url": "wolfspider.jpg"
+      }
+    ]
+  },
+  {
+    "form": "",
+    "gloss": "woodpecker",
+    "links": [
+      {
+        "type": "image",
+        "url": "woodpecker.jpg"
+      }
+    ]
+  }
+]}
