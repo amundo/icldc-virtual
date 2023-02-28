@@ -383,33 +383,30 @@ So what does it take to <em>make</em> a web site?
 <figure><img src="images/parrish.png" alt="Essie Parrish, speaker of Kashaya Pomo"></figure>
 
 <div class="scrollable" style="">
-<article id=animal-photos>
-  <h3>Animal photos</h3>
-  <div class=animal-grid>
-<img src="./languages/kashaya/images/wolfspider.jpg">
-<img src="./languages/kashaya/images/groundsquirrel.jpg">
-<img src="./languages/kashaya/images/scrubjay.jpg">
-<img src="./languages/kashaya/images/fly.jpg">
-<img src="./languages/kashaya/images/woodpecker.jpg">
-<img src="./languages/kashaya/images/bluejay.jpg">
-<img src="./languages/kashaya/images/octopus.jpg">
-<img src="./languages/kashaya/images/elk.jpg">
-<img src="./languages/kashaya/images/blackcat.jpg">
-<img src="./languages/kashaya/images/cat.jpg">
-<img src="./languages/kashaya/images/racoon.jpg">
-<img src="./languages/kashaya/images/mountainlion.jpg">
-<img src="./languages/kashaya/images/grasshopper.jpg">
-<img src="./languages/kashaya/images/bobcat.jpg">
-<img src="./languages/kashaya/images/greathornedowl.jpg">
-<img src="./languages/kashaya/images/ringtail.jpg">
-<img src="./languages/kashaya/images/bat.jpg">
-<img src="./languages/kashaya/images/bear.jpg">
-  </div>
-</article>
-<article>
-<h3>Some California Animals</h3>
-<p>CAn you 
 
+<article id=animal-photos>
+<div class="animal-grid" id=animals>
+  <img src="./languages/kashaya/images/groundsquirrel.jpg">
+  <img src="./languages/kashaya/images/mountainlion.jpg">
+  <img src="./languages/kashaya/images/ringtail.jpg">
+  <img src="./languages/kashaya/images/bear.jpg">
+  <img src="./languages/kashaya/images/octopus.jpg">
+  <img src="./languages/kashaya/images/woodpecker.jpg">
+  <img src="./languages/kashaya/images/greathornedowl.jpg">
+  <img src="./languages/kashaya/images/grasshopper.jpg">
+  <img src="./languages/kashaya/images/elk.jpg">
+</div>
+</article>
+<article id=prompts>
+<ol><li>ground squirrel</li>
+<li>mountain lion</li>
+<li>ringtail/civet</li>
+<li>bear</li>
+<li>octopus</li>
+<li>woodpecker</li>
+<li>great horned owl</li>
+<li>grasshopper</li>
+<li>elk</li></ol>
 </article>
 </div>
   
