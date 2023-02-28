@@ -2,7 +2,7 @@
 @import "typography.css";
 @import "colors.css";
 @import "speech-bubble/speech-bubble.css";
-@import "record-audio/record-audio.css";
+@import "../record-audio/record-audio.css";
 
 
 #title-block-header, section.level2 {
@@ -306,7 +306,7 @@ body {
 
 .animal-grid {
   display: grid;
-  height:100vh;
+  height:100%;
   width: auto;
   grid-template: 
     repeat(3,minmax(0,100%)) / 

@@ -2,3 +2,15 @@
 record-audio {
   display: block;
 }
+
+
+record-audio a {
+  filter: saturate(0);
+}
+
+
+
+record-audio a:hover {
+  filter: saturate(1);
+}
+

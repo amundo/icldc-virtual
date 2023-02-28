@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animal photos</title>
+  <style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow:scroll;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+img, video {
+  max-height: 100%;
+}
+
+#animal-photos {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.animal-grid {
+  display: grid;
+  height:100%;;
+  width: auto;
+  grid-template: 
+    repeat(3,minmax(0,100%)) / 
+    repeat(3, minmax(0, 100%));
+}
+
+.animal-grid img {
+  aspect-ratio: 2/1;
+  object-fit:cover;
+  height:100%;
+  width: 100%;
+}
+  </style>
+</head>
+<body style="height:100%;">
+  
+<article id="animal-photos" style="height:100%;display:grid;grid-template-rows:auto 1fr;">
+  <h3>
+  Animal photos
+  </h3>
+  <div class="animal-grid">
+  <img src="./languages/kashaya/images/groundsquirrel.jpg">
+  <img src="./languages/kashaya/images/mountainlion.jpg">
+  <img src="./languages/kashaya/images/ringtail.jpg">
+  <img src="./languages/kashaya/images/bear.jpg">
+  <img src="./languages/kashaya/images/octopus.jpg">
+  <img src="./languages/kashaya/images/woodpecker.jpg">
+  <img src="./languages/kashaya/images/greathornedowl.jpg">
+  <img src="./languages/kashaya/images/grasshopper.jpg">
+  <img src="./languages/kashaya/images/elk.jpg">
+  </div>
+  </article>
+  
+
+</body>
+</html>

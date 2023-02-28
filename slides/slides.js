@@ -46,8 +46,9 @@ if(!document.location.hash){
 // add audio recorder to each page
 
 document.querySelectorAll('body > header, body > section.level2')
-  .forEach(slide => {
+  .forEach((slide,i) => {
     let recordAudio = new RecordAudio()
+    recordAudio.setAttribute('audio-file-name', `${i}.ogg`)
     slide.append(recordAudio)
   })
 

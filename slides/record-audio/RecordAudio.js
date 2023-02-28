@@ -24,7 +24,7 @@ export class RecordAudio extends HTMLElement {
   connectedCallback(){
     this.innerHTML = `
       <button class=state-button>record</button>
-      <a href=# download="recorded-audio.webm">download recording</a>
+      <a href=# download="recorded-audio.webm" title="download recording">⬇️</a>
     `
 
     this.record()
