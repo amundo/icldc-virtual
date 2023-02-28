@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "build": "pandoc -f markdown -t html --css record-audio-docs.css --section-divs --template=template.html -o record-audio-docs.html record-audio-docs.md"
+  }
+}
