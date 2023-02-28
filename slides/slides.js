@@ -1,3 +1,4 @@
+import {RecordAudio} from './record-audio/RecordAudio.js'
 
 addEventListener('load', () => {
   console.log(`loaded…`)
@@ -41,6 +42,17 @@ if(!document.location.hash){
   show(0)
 }
 
+
+// add audio recorder to each page
+
+document.querySelectorAll('body > header, body > section.level2')
+  .forEach(slide => {
+    let recordAudio = new RecordAudio()
+    slide.append(recordAudio)
+  })
+
+
+
 // randomizing slide colors below
 
 let hues = [ "red", "pink", "grape", "violet", "indigo", "blue", "cyan", "teal", "green", "lime", "yellow", "orange", "grey" ]
@@ -57,7 +69,7 @@ document.querySelectorAll('body > header, body > section.level2')
     el.style.setProperty('--light-color', `var(--${choice(hues)}-2)` );
 
     let backgroundImage = `
-      radial-gradient(ellipse at ${choice(["bottom"])} ${choice(["left", "center", "right"])}, var(--light-color) 5%, var(--dark-color)),
+      radial-gradient(ellipse at ${choice(["bottom"])} ${choice(["left", "center", "right"])}, var(--light-color) 2%, var(--dark-color)),
       radial-gradient(ellipse at ${choice(["top"])} ${choice(["left", "center", "right"])}, var(--light-color) 5%, var(--dark-color))
     `
 

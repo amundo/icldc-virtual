@@ -1,9 +1,8 @@
 @import "reset.css";
 @import "typography.css";
 @import "colors.css";
-@import "layouts.css";
 @import "speech-bubble/speech-bubble.css";
-
+@import "record-audio/record-audio.css";
 
 
 #title-block-header, section.level2 {
@@ -283,3 +282,48 @@ body {
 }
 
 */
+
+
+.scrollable {
+  background:white;
+  max-height:100%;
+  overflow-y: auto
+}
+
+.scrollable article {
+  max-height: 100%;
+  width:100%;
+  border: 1px solid;
+  /* display: grid;
+  place-content: center; */
+}
+
+#animal-photos {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.animal-grid {
+  display: grid;
+  height:100vh;
+  width: auto;
+  grid-template: 
+    repeat(3,minmax(0,100%)) / 
+    repeat(3, minmax(0, 100%));
+}
+
+.animal-grid img {
+  object-fit:cover;
+  height:100%;
+  width: 100%;
+}
+
+
+record-audio {
+  position:fixed;
+  bottom: 0;
+  right:0;
+  background: white;
+  padding:1em;
+}
